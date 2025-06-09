@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-  var TITLE = 'English Learners by Select School Districts in CT, 2018-19';
+  var TITLE = 'Weekly Time Allocation';
 
   // `false` for vertical column chart, `true` for horizontal bar chart
   var HORIZONTAL = false;
@@ -9,27 +9,19 @@ $(document).ready(function() {
   var STACKED = false;  
   
   // Which column defines 'bucket' names?
-  var LABELS = 'district';  
+  var LABELS = 'category';  
 
   // For each column representing a data series, define its name and color
-  var SERIES = [  
-    {
-      column: 'nonlearner',
-      name: 'Non-Learners',
-      color: 'grey'
-    },
-    {
-      column: 'learner',
-      name: 'Learners',
-      color: 'blue'
-    }
-  ];
+var SERIES = [
+  { column: 'Value', name: 'Hours', color: 'blue' }
+];
 
   // x-axis label and label in tooltip
-  var X_AXIS = 'School Districts';
+var X_AXIS = 'Activities';
 
   // y-axis label, label in tooltip
-  var Y_AXIS = 'Number of Enrolled Students';
+
+var Y_AXIS = 'Hours per Week';
 
   // `true` to show the grid, `false` to hide
   var SHOW_GRID = true; 
